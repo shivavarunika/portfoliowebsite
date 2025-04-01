@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact form input,
+            .contact form textarea {
+                width: 100%;
+                padding: 0.8rem;
+                margin: 1rem 0;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+          
+            .contact form button {
+                padding: 1rem;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="main-content">
+    <section id="contact" class="contact">
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+        <nav>
+            <a href="main.html">About Me</a>
+            <a href="project.html">Projects</a>
+            <a href="certificate.html">Certification</a>
+            <a href="skill.html">Skills</a>
+            <a href="contactme.html">Contact</a>
+        </nav>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+</body>
+</html>

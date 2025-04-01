@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+<div class="main-content">
+    <div class="container">
+        <header>
+            <h1>Skills</h1>
+        </header>
+        <nav>
+            <a href="main.html">About Me</a>
+            <a href="project.html">Projects</a>
+            <a href="certificate.html">Certification</a>
+            <a href="skill.html">Skills</a>
+            <a href="contactme.html">Contact</a>
+        </nav>
+        <div class="skills-list">
+            <div class="skill-box" onclick="showCertificate('C', 'c.jpg')">C</div>
+            <div class="skill-box" onclick="showCertificate('C++', 'c++.png')">C++</div>
+            <div class="skill-box" onclick="showCertificate('SQL', 'SQL.png')">SQL</div>
+            <div class="skill-box" onclick="showCertificate('JAVA', 'java.jpg')">JAVA</div>
+            <div class="skill-box" onclick="showCertificate('HTML', 'react.png')">HTML</div>
+            <div class="skill-box" onclick="showCertificate('CSS', 'react.png')">CSS</div>
+            <div class="skill-box" onclick="showLink('JavaScript', {url: 'https://github.com/shivavarunika/JSTASK-1', text: 'git link'})">JavaScript</div>
+            <div class="skill-box"  onclick="showLink('React', {url: 'https://github.com/shivavarunika/reactbasictask', text: 'git link'})">React</div>
+            <div class="skill-box" onclick="showCertificate('Kali Linux', 'cyber.png')">Kali Linux</div>
+            <div class="skill-box" onclick="showCertificate('Burp Suite', 'cyber.png')">Burp Suite</div>
+        </div>
+        
+        <div id="certificateSection" class="certificate-section">
+            <h2 id="certTitle"></h2>
+            <img id="certImage" src="" alt="Certificate" style="display: none;">
+        </div>
+        <div id="linkSection" style="display: none;"></div>
+    </div>
+</div>
+
+<script src="skills.js"></script>
+</body>
+</html>
